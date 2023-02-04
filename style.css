@@ -1,0 +1,19 @@
+.container {
+  
+}
+
+.display-4 {
+  display: inline-flexbox;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #1b74ab;
+  color: #d4a825;
+}
+
+.container-fluid {
+  display: block;
+  width: 33%;
+  text-align: center;
+
+}
+
