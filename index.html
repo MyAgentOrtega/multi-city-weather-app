@@ -11,20 +11,39 @@
     <title>Multi-City Weather</title>
 </head>
 <body>
-    
-    <div class="container">
+  
+    <div >
        <div class=" jumbotron-fluid bg-dark text-white text-center">
-         <div class="container">
-           <h1 class="display-4 ">🌧️ Weather Dashboard 🌞</h1>
+           <h1 class="display-4">🌧️ Weather Dashboard 🌞</h1>
          </div>
        </div>
-
-       <div class="container-fluid">
-        <h1>City Search:</h1>
-        <p><input type="text" class="form-control" placeholder="City Name"></p>
-      </div>
-
-
+        <div class="container-fluid">
+          <h1>City Search:</h1>
+          <p><input type="text" class="form-control" placeholder="City Name"></p>
+        </div>
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+            The current button
+          </button>
+          <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A fifth button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A sixth button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A seventh button item</button>
+          <button type="button" class="list-group-item list-group-item-action">A 8th button item</button>
+        </div>
     <script src="./main.js"></script>
 </body>
 </html>
+
+
+<!-- GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city -->

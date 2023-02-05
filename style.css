@@ -1,19 +1,39 @@
-.container {
-  
-}
-
 .display-4 {
   display: inline-flexbox;
-  padding: 10px;
-  font-size: 24px;
+  padding: 20px;
+  font-size: 30px;
   background-color: #1b74ab;
   color: #d4a825;
 }
 
 .container-fluid {
   display: block;
-  width: 33%;
+  width: 13%;
   text-align: center;
-
 }
 
+.list-group {
+width:  20%;
+}
+
+.list-group-item {
+  margin: 13px;
+}
+
+.list-group-item-action {
+  background-color: #1b74ab;
+  color: #d4a825;
+}
+.button.list-group-item-action {
+
+  background-color: #1b74ab;
+  color: #d4a825;
+  border: double 10px;color: coral;
+}
+
+.button.list-group-item.list-group-item-action {
+  background-color: #1b74ab;
+  color: #d4a825;
+  border: double 10px; color: darkred;
+
+}
