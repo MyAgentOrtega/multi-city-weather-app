@@ -8,7 +8,7 @@ N/A
 
 
 ### <u> Screenshot: </u>
-![Timed-Question Website Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png))
+![Timed-Question Website Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png)
 <br /><br />
 
     
