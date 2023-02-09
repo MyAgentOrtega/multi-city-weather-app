@@ -1,22 +1,20 @@
 # Multi-City Weather   <br/>
 
 ### <u> Description: </u>
-This is a weather application thaT allows the user to check multiple cities weather for days to plan trips accordingly to the weather.
+This is a weather application that allows the user to check multiple cities weather for days to plan trips accordingly to the weather.
 
 ### <u> Notes: </u>
-* one
-* two
-* Three
+N/A
 
 
 ### <u> Screenshot: </u>
-![Timed-Question Website Screenshot](./Assets/timed-question.jpeg)
+![Timed-Question Website Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png))
 <br /><br />
 
     
 ### <u> Deployable Link to Website: </u>
 
-https://myagentortega.github.io/timed-question/
+https://myagentortega.github.io/multi-city-weather/
 
 ### <u> Support:  </u>
 

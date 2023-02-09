@@ -1,39 +1,49 @@
 .display-4 {
-  display: inline-flexbox;
-  padding: 20px;
-  font-size: 30px;
-  background-color: #1b74ab;
-  color: #d4a825;
-}
+    display: inline-flexbox;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #1b74ab;
+    color: #d4a825;
+  }
+  
+  .container-fluid {
+    display: block;
+    width: 13%;
+    text-align: center;
+  }
+  
+  .list-group {
+  width:  20%;
+  }
+  
+  .list-group-item {
+    margin: 13px;
+  }
+  
+  .list-group-item-action {
+    background-color: #1b74ab;
+    color: #d4a825;
+  }
+  .button.list-group-item-action {
+  
+    background-color: #1b74ab;
+    color: #d4a825;
+    border: double 10px;color: coral;
+  }
+  
+  .button.list-group-item.list-group-item-action {
+    background-color: #1b74ab;
+    color: #d4a825;
+    border: double 10px; color: darkred;
+  
+  }
 
-.container-fluid {
-  display: block;
-  width: 13%;
-  text-align: center;
-}
+  .div.weather-card.card.m-2.p0 {
 
-.list-group {
-width:  20%;
-}
+    display:inline-table;
+    background-color:aquamarine
+  }
 
-.list-group-item {
-  margin: 13px;
-}
-
-.list-group-item-action {
-  background-color: #1b74ab;
-  color: #d4a825;
-}
-.button.list-group-item-action {
-
-  background-color: #1b74ab;
-  color: #d4a825;
-  border: double 10px;color: coral;
-}
-
-.button.list-group-item.list-group-item-action {
-  background-color: #1b74ab;
-  color: #d4a825;
-  border: double 10px; color: darkred;
-
-}
+  .card.col-lg-2 {
+   border: #1b74ab 4px double;
+  }

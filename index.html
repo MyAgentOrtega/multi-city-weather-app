@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Multi-City Weather</title>
-</head>
-<body>
-  
-    <div >
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Weather Dashboard 🌦️</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
+          <h3>Search City</h3>
+          <p><input type="text" id="cityBox" placeholder="City Name"></p>
+          <button id= "searchButton"> Search </button>
+          <div class="list-group" style="width: 100%">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+              The current button
+            </button>
+            <button type="button" class="list-group-item list-group-item-action"> Austin</button>
+            <button type="button" class="list-group-item list-group-item-action"> Los Angeles</button>
+            <button type="button" class="list-group-item list-group-item-action"> Miami</button>
+            <button type="button" class="list-group-item list-group-item-action"> Portland</button>
+            <button type="button" class="list-group-item list-group-item-action"> Seattle</button>
+            <button type="button" class="list-group-item list-group-item-action"> San Diego</button>
+            <button type="button" class="list-group-item list-group-item-action"> Denver</button>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="card border border-dark">
+            <h3 id="cityCard1"></h3>
+            <div id="cityCardIcon1"></div>
+            <p>Temperature <span id="tempCard1"></span>℉</p>
+            <p>Wind <span id= "windCard1"></span>mph</p>
+            <p>Humidity<span id= "humidityCard1"></span>%</p>
+          </div>
+          <h3>5 Day Forecast</h3>
+          <div class="row"></div>
+            <div class="card col-lg-2">Card Placeholder</div>
+            <div class="card col-lg-2">Card Placeholder</div>
+            <div class="card col-lg-2">Card Placeholder</div>
+            <div class="card col-lg-2">Card Placeholder</div>
+            <div class="card col-lg-2">Card Placeholder</div>
+        </div>
+      </div>
+    </div>
+
+    <!--  <div >
        <div class=" jumbotron-fluid bg-dark text-white text-center">
            <h1 class="display-4">🌧️ Weather Dashboard 🌞</h1>
          </div>
@@ -33,10 +76,65 @@
           <button type="button" class="list-group-item list-group-item-action">A seventh button item</button>
           <button type="button" class="list-group-item list-group-item-action">A 8th button item</button>
         </div>
-    <script src="./main.js"></script>
-</body>
-</html>
+        <div>
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+          <div class="weather-card card m-2 p0">
+            <ul class="list-unstyled p-3">
+                <li>02/05/23</li>
+                <li class="weather-icon"><img src="https://openweathermap.org/img/w/02d.png"></li>
+                <li>Temp: 65.98℉</li>
+                <br>
+                <li>Humidity: 71%</li>
+                <div class="weather-card card m-2 p0">
+                  <ul class="list-unstyled p-3">
+                      <li>02/05/23</li>
+                      <li class="weather-icon"><img src="https://openweathermap.org/img/w/02d.png"></li>
+                      <li>Temp: 65.98℉</li>
+                      <br>
+                      <li>Humidity: 71%</li>
+                  </ul>
+              </div>
+              <div class="weather-card card m-2 p0">
+                <ul class="list-unstyled p-3">
+                    <li>02/05/23</li>
+                    <li class="weather-icon"><img src="https://openweathermap.org/img/w/02d.png"></li>
+                    <li>Temp: 65.98℉</li>
+                    <br>
+                    <li>Humidity: 71%</li>
+                </ul>
+            </div>
+            <div class="weather-card card m-2 p0">
+              <ul class="list-unstyled p-3">
+                  <li>02/05/23</li>
+                  <li class="weather-icon"><img src="https://openweathermap.org/img/w/02d.png"></li>
+                  <li>Temp: 65.98℉</li>
+                  <br>
+                  <li>Humidity: 71%</li>
+              </ul>
+          </div>
+          <div class="weather-card card m-2 p0">
+            <ul class="list-unstyled p-3">
+                <li>02/05/23</li>
+                <li class="weather-icon"><img src="https://openweathermap.org/img/w/02d.png"></li>
+                <li>Temp: 65.98℉</li>
+                <br>
+                <li>Humidity: 71%</li>
+            </ul>
+        </div>
+            </ul>
+        </div>
 
+
+
+        </div> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
 
 <!-- GIVEN a weather dashboard with form inputs
 WHEN I search for a city
