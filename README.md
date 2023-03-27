@@ -6,11 +6,14 @@ This is a weather application that allows the user to check multiple cities weat
 
 ### <u> Notes: </u>
 
-N/A
+- Updated 5 day weather with icons.
+- Updated current weather with icon.
+- Local storage has been added.
 
 ### <u> Screenshot: </u>
 
-![Multi-City Weather Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png)
+![Multi-City Weather Screenshot](./Assets/Images/local%20storage%20ex%20WeatherApp.jpg)
+![Multi-City Weather Screenshot](./Assets/Images/app%20screenshot.png)
 <br /><br />
 
 ### <u> Deployable Link to Website: </u>
