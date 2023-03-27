@@ -53,12 +53,3 @@ historyContainer.addEventListener('click', function (event) {
   console.log(event.target.textContent)
   dataCompiler(event.target.textContent)
 })
-
-/**
- for - it starts our loop
- i=0 ; the variable that we use in our loop
- */
-for (let i = 0; i < array.length; i++) {
-  const element = array[i];
-  
-}
