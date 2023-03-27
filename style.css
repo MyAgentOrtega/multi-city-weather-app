@@ -47,3 +47,9 @@
   .card.col-lg-2 {
    border: #1b74ab 4px double;
   }
+  body {
+    background-image: url('https://wallpapercave.com/wp/qQa5Pd7.jpg');
+  }
+.row {
+  color: rgb(146, 9, 9);
+}

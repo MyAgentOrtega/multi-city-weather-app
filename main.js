@@ -54,17 +54,13 @@ function dataForecastCompiler(cityName) {
     var display = 1
     for (let index = 0; index < data.list.length; index=index+8) {
       console.log(data.list[index])
-var cards = `<p>Temperature <span ${data.list[index].main.temp} "></span>℉</p>
+var cards = `<p>Temperature <span  ">${data.list[index].main.temp}</span>℉</p>
 <p>Wind <span >${data.list[index].wind.speed}</span>mph</p>
 <p>Humidity<span >${data.list[index].main.humidity}</span>%</p>`
 
      document.getElementById("card-"+display).innerHTML = cards
      display++ 
     }
-        // tempCard1.textContent=data.main.temp
-        // humidityCard1.textContent=data.main.humidity
-        // windCard1.textContent=data.wind.speed
-        
   });
 }
 
