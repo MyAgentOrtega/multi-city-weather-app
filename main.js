@@ -21,7 +21,7 @@ searchButton.addEventListener("click", function () {
   button.textContent = cityBox.value
   historyContainer.appendChild(button)
   localStorage.setItem('cities', JSON.stringify(historyCities))
-
+  dataForecastCompiler(cityBox.value)
   dataCompiler(cityBox.value)
 });
 function dataCompiler(cityName) {
@@ -40,6 +40,34 @@ function dataCompiler(cityName) {
         
   });
 }
+function dataForecastCompiler(cityName) {
+  console.log(cityName);
+  var queryURL =
+    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    cityName +
+    "&appid=" +
+    api+"&units=imperial";
+  fetch(queryURL).then(function (response) {
+    return response.json();
+  }).then(function (data){
+    console.log(data)
+    var display = 1
+    for (let index = 0; index < data.list.length; index=index+8) {
+      console.log(data.list[index])
+var cards = `<p>Temperature <span ${data.list[index].main.temp} "></span>℉</p>
+<p>Wind <span >${data.list[index].wind.speed}</span>mph</p>
+<p>Humidity<span >${data.list[index].main.humidity}</span>%</p>`
+
+     document.getElementById("card-"+display).innerHTML = cards
+     display++ 
+    }
+        // tempCard1.textContent=data.main.temp
+        // humidityCard1.textContent=data.main.humidity
+        // windCard1.textContent=data.wind.speed
+        
+  });
+}
+
 console.log(historyContainer)
 historyCities.forEach((city) => {
   const button = document.createElement('button')
