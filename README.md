@@ -1,24 +1,25 @@
-# Multi-City Weather   <br/>
+# Multi-City Weather <br/>
 
 ### <u> Description: </u>
+
 This is a weather application that allows the user to check multiple cities weather for days to plan trips accordingly to the weather.
 
 ### <u> Notes: </u>
+
 N/A
 
-
 ### <u> Screenshot: </u>
-![Timed-Question Website Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png)
+
+![Multi-City Weather Screenshot](./Assets/_C__Users_MyAge_code_bootcamp_challenges_multi-city-weather_index.html.png)
 <br /><br />
 
-    
 ### <u> Deployable Link to Website: </u>
 
 https://myagentortega.github.io/multi-city-weather/
 
-### <u> Support:  </u>
+### <u> Support: </u>
 
-- [MDN](https://developer.mozilla.org/en-US/)  
+- [MDN](https://developer.mozilla.org/en-US/)
 
 - [Google](https://Google.com)
 
@@ -33,5 +34,3 @@ Authors and acknowledgement: Thank you to all my peers, tutors and instructors t
 ### <u> License </u>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
