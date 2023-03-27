@@ -61,7 +61,7 @@ function dataForecastCompiler(cityName) {
     for (let index = 0; index < data.list.length; index=index+8) {
       console.log(data.list[index])
 var cards =`
-<img src=https://openweathermap.org/img/w/${data.list[index]}.weather[0].icon}.png />
+<img src=https://openweathermap.org/img/w/${data.list[index].weather[0].icon}.png />
 <p>Temperature <span  ">${data.list[index].main.temp}</span>℉</p>
 <p>Wind <span >${data.list[index].wind.speed}</span>mph</p>
 <p>Humidity<span >${data.list[index].main.humidity}</span>%</p>`
