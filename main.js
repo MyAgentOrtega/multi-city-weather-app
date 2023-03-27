@@ -33,11 +33,17 @@ function dataCompiler(cityName) {
     api+"&units=imperial";
   fetch(queryURL).then(function (response) {
     return response.json();
-  }).then(function (data){
+  }).then(function (data){        
+    var iconCode = data.weather[0].icon;
+    var iconImg = document.createElement('img');
+        iconImg.src = "http://openweathermap.org/img/wn/" + iconCode + ".png";
+        cityCardIcon1.appendChild(iconImg);
         tempCard1.textContent=data.main.temp
         humidityCard1.textContent=data.main.humidity
         windCard1.textContent=data.wind.speed
-        
+
+
+
   });
 }
 function dataForecastCompiler(cityName) {
@@ -54,7 +60,9 @@ function dataForecastCompiler(cityName) {
     var display = 1
     for (let index = 0; index < data.list.length; index=index+8) {
       console.log(data.list[index])
-var cards = `<p>Temperature <span  ">${data.list[index].main.temp}</span>℉</p>
+var cards =`
+<img src=https://openweathermap.org/img/w/${data.list[index]}.weather[0].icon}.png />
+<p>Temperature <span  ">${data.list[index].main.temp}</span>℉</p>
 <p>Wind <span >${data.list[index].wind.speed}</span>mph</p>
 <p>Humidity<span >${data.list[index].main.humidity}</span>%</p>`
 
