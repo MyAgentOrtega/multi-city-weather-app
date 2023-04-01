@@ -1,7 +1,7 @@
 var api = "be72fd914bab0c219bc96507583fbb76";
 var city = "Denver";
 var queryURL =
-  "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api;
+  "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api;
 
 const cityCard1 = document.getElementById("cityCard1");
 const cityCardIcon1 = document.getElementById("cityCardIcon1");
@@ -28,7 +28,7 @@ searchButton.addEventListener("click", function () {
 function dataCompiler(cityName) {
   console.log(cityName);
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
     "&appid=" +
     api +
@@ -40,7 +40,7 @@ function dataCompiler(cityName) {
     .then(function (data) {
       var iconCode = data.weather[0].icon;
       var iconImg = document.createElement("img");
-      iconImg.src = "http://openweathermap.org/img/wn/" + iconCode + ".png";
+      iconImg.src = "https://openweathermap.org/img/wn/" + iconCode + ".png";
       cityCardIcon1.innerHTML = "";
       cityCardIcon1.appendChild(iconImg);
       tempCard1.textContent = data.main.temp;
@@ -51,7 +51,7 @@ function dataCompiler(cityName) {
 function dataForecastCompiler(cityName) {
   console.log(cityName);
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     cityName +
     "&appid=" +
     api +
