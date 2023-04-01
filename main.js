@@ -38,6 +38,7 @@ function dataCompiler(cityName) {
       return response.json();
     })
     .then(function (data) {
+      console.log(data)
       var iconCode = data.weather[0].icon;
       var iconImg = document.createElement("img");
       iconImg.src = "https://openweathermap.org/img/wn/" + iconCode + ".png";
@@ -89,4 +90,5 @@ historyCities.forEach((city) => {
 historyContainer.addEventListener("click", function (event) {
   console.log(event.target.textContent);
   dataCompiler(event.target.textContent);
+  dataForecastCompiler(event.target.textContent);
 });
